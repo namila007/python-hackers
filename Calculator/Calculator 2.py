@@ -7,7 +7,7 @@ box=ctypes.windll.user32.MessageBoxW
 
 def start():
 
-	global first  #assigning global to local 
+	global first  #assigning global var to local var
 	global second
 	global op
 	first=input(" |Enter First Number:")
@@ -23,7 +23,7 @@ def start():
 
 def cal(fi,se):
 	ans=None
-	#ccalculation
+	#calculation
 	
 	# _,_,op=start() old way to assign var for return fucntion
 	
@@ -36,7 +36,7 @@ def cal(fi,se):
 		ans=int(fi)*int(se)	
 	elif op=="4":
 		if se=="0":
-			box(None, "Cant divide by Zero(0)","Error!", 0)
+			box(None, "Cant divide by Zero(0)","Error!", 0) #error box
 			print("----------------------")	
 			print(" |||CALCULATOR V2.0|||")
 			print("----------------------")	
@@ -52,7 +52,7 @@ def run():
 	
 	
 	cal(first,second)
-	again=input("Do you need to calculate again? Y/N:")
+	again=input("Do you need to calculate again? Y/N:") #recalculation
 	if again=="y":
 		print("----------------------")	
 		print(" |||CALCULATOR V2.0|||")
@@ -62,9 +62,8 @@ def run():
 	else:
 		sys.exit(0) #exit the program
 	
-	
+#programme	
 print("----------------------")	
 print(" |||CALCULATOR V2.0|||")
 print("----------------------")	
 run()	
-	
