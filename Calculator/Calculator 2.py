@@ -1,9 +1,9 @@
 import sys
 import ctypes
-first=None
+first=None     #global variables
 second=None
 op=None
-box=ctypes.windll.user32.MessageBoxW
+box=ctypes.windll.user32.MessageBoxW #win error box assigning
 
 def start():
 
