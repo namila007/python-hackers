@@ -37,9 +37,6 @@ def cal(fi,se):
 	elif op=="4":
 		if se=="0":
 			box(None, "Cant divide by Zero(0)","Error!", 0) #error box
-			print("----------------------")	
-			print(" |||CALCULATOR V2.0|||")
-			print("----------------------")	
 			run()
 		else:
 			ans=int(fi)/int(se)
@@ -48,6 +45,9 @@ def cal(fi,se):
 		
 	
 def run():
+	print("----------------------")	
+	print(" |||CALCULATOR V2.0|||")
+	print("----------------------")	
 	start()
 	
 	
@@ -63,7 +63,5 @@ def run():
 		sys.exit(0) #exit the program
 	
 #programme	
-print("----------------------")	
-print(" |||CALCULATOR V2.0|||")
-print("----------------------")	
+
 run()	
